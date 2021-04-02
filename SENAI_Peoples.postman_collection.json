@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "0e4062f9-c5ef-4de9-9274-d2fb332d14bb",
+		"name": "SENAI_Peoples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Funcionarios.ListarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:31438/api/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31438",
+					"path": [
+						"api",
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funcionarios.Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nome\" : \"Saulo\"\r\n    ,\"Sobrenome\" : \"Santos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:31438/api/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31438",
+					"path": [
+						"api",
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funcionarios.BuscarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:31438/api/funcionarios/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31438",
+					"path": [
+						"api",
+						"funcionarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funcionarioss.Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nome\" : \"Caique\"\r\n    ,\"Sobrenome\" : \"Zanetti\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:31438/api/funcionarios/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31438",
+					"path": [
+						"api",
+						"funcionarios",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Funcionarios.Deletar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
