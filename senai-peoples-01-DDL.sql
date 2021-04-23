@@ -1,4 +1,4 @@
-Create DATABASE T_Peoples;
+CREATE DATABASE T_Peoples;
 GO
 
 USE T_Peoples;
@@ -8,7 +8,7 @@ GO
 CREATE TABLE Funcionarios
 (
 	IdFuncionario INT PRIMARY KEY IDENTITY
-	,Nome VARCHAR(200)
-	,Sobrenome VARCHAR(255)
+	,Nome VARCHAR(200) NOT NULL
+	,Sobrenome VARCHAR(255) NOT NULL
 );
 GO
